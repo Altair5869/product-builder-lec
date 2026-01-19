@@ -52,6 +52,7 @@ const desserts = {
   tiramisu: {
     name: "티라미수",
     icon: "🍰",
+    image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=300&fit=crop",
     description: "부드러운 마스카포네 크림과 에스프레소의 조화가 완벽한 이탈리안 디저트예요. 달콤하면서도 커피의 쌉싸름함이 어우러져 어른의 맛을 선사합니다.",
     tags: ["#이탈리안", "#커피향", "#부드러움"],
     tip: "카페에서 아메리카노와 함께 즐기면 더욱 맛있어요!"
@@ -59,6 +60,7 @@ const desserts = {
   macaron: {
     name: "마카롱",
     icon: "🧁",
+    image: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=400&h=300&fit=crop",
     description: "겉은 바삭하고 속은 촉촉한 프렌치 디저트의 정수! 다양한 맛과 예쁜 색감으로 눈과 입 모두 행복해지는 디저트예요.",
     tags: ["#프렌치", "#다채로운맛", "#선물용"],
     tip: "냉장 보관 후 상온에 10분 두고 먹으면 최상의 식감을 즐길 수 있어요!"
@@ -66,6 +68,7 @@ const desserts = {
   yoajung: {
     name: "요아정",
     icon: "🍦",
+    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
     description: "요거트 아이스크림에 다양한 토핑을 마음껏 올려 먹는 커스텀 디저트예요! 과일, 그래놀라, 떡, 젤리 등 원하는 토핑을 선택하는 재미가 있어요.",
     tags: ["#요거트", "#토핑맛집", "#커스텀"],
     tip: "그래놀라와 망고를 함께 올리면 바삭함과 상큼함을 동시에 즐길 수 있어요!"
@@ -73,6 +76,7 @@ const desserts = {
   croffle: {
     name: "크로플",
     icon: "🧇",
+    image: "https://images.unsplash.com/photo-1620921592619-652c9fd04101?w=400&h=300&fit=crop",
     description: "크로와상의 바삭함과 와플의 식감이 만난 인기 디저트! 겉은 바삭하고 속은 촉촉한 매력에 빠져보세요.",
     tags: ["#바삭함", "#따뜻함", "#브런치"],
     tip: "바닐라 아이스크림을 올려 먹으면 따뜻함과 차가움의 조화가 환상이에요!"
@@ -80,6 +84,7 @@ const desserts = {
   cheesecake: {
     name: "바스크 치즈케이크",
     icon: "🧀",
+    image: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop",
     description: "겉은 캐러멜화되어 살짝 탄 듯하고, 속은 부드럽고 진한 치즈 맛이 일품이에요. 스페인 바스크 지방에서 유래한 디저트예요.",
     tags: ["#치즈러버", "#진한맛", "#부드러움"],
     tip: "차갑게 먹으면 더 진한 치즈 맛을, 상온에서는 부드러운 식감을 즐길 수 있어요!"
@@ -87,6 +92,7 @@ const desserts = {
   bingsu: {
     name: "팥빙수",
     icon: "🍧",
+    image: "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=400&h=300&fit=crop",
     description: "곱게 간 얼음 위에 달콤한 팥과 떡, 견과류를 올린 한국 대표 디저트예요. 시원하고 달콤해서 더운 날 최고의 선택이에요.",
     tags: ["#한국디저트", "#시원함", "#팥앙금"],
     tip: "인절미 토핑을 추가하면 고소함이 배가 돼요!"
@@ -94,6 +100,7 @@ const desserts = {
   dubaiCookie: {
     name: "두바이 쫀득 쿠키",
     icon: "🍪",
+    image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&h=300&fit=crop",
     description: "겉은 바삭하고 속은 쫀득한 두바이 스타일 쿠키예요! 피스타치오 크림과 카다이프가 들어가 고소하고 달콤한 맛이 일품이에요.",
     tags: ["#두바이", "#쫀득쿠키", "#SNS대세"],
     tip: "전자레인지에 10초 돌리면 속이 더 쫀득해져서 맛있어요!"
@@ -101,6 +108,7 @@ const desserts = {
   saltBread: {
     name: "소금빵",
     icon: "🥐",
+    image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop",
     description: "겉은 바삭하고 속은 촉촉한 빵 위에 소금이 톡톡! 버터의 풍미와 짭짤한 소금의 조화가 자꾸만 손이 가는 인기 빵이에요.",
     tags: ["#짭짤함", "#버터향", "#베이커리핫템"],
     tip: "오븐에 살짝 데워 먹으면 버터가 녹아 더 촉촉해져요!"
@@ -108,6 +116,7 @@ const desserts = {
   tanghulu: {
     name: "탕후루",
     icon: "🍡",
+    image: "https://images.unsplash.com/photo-1565071559227-20ab25b7685e?w=400&h=300&fit=crop",
     description: "신선한 과일을 달콤한 설탕 코팅으로 감싼 바삭한 디저트예요! 딸기, 포도, 귤 등 다양한 과일로 즐길 수 있어요. 한입 베어물면 바삭! 상큼!",
     tags: ["#바삭함", "#과일", "#길거리간식"],
     tip: "만든 직후 바로 먹어야 바삭한 코팅을 제대로 즐길 수 있어요!"
@@ -115,6 +124,7 @@ const desserts = {
   donut: {
     name: "글레이즈드 도넛",
     icon: "🍩",
+    image: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop",
     description: "푹신한 도넛에 달콤한 글레이즈가 코팅된 클래식한 디저트예요. 심플하지만 누구나 좋아하는 맛이에요.",
     tags: ["#클래식", "#달콤함", "#간식"],
     tip: "커피와 함께하면 글레이즈의 단맛이 더 살아나요!"
@@ -189,7 +199,14 @@ function selectAnswer(type) {
 function showResult() {
   const dessert = calculateResult();
 
-  document.getElementById('result-icon').textContent = dessert.icon;
+  // 이미지 또는 아이콘 표시
+  const resultIconEl = document.getElementById('result-icon');
+  if (dessert.image) {
+    resultIconEl.innerHTML = `<img src="${dessert.image}" alt="${dessert.name}" class="result-image">`;
+  } else {
+    resultIconEl.textContent = dessert.icon;
+  }
+
   document.getElementById('result-name').textContent = dessert.name;
   document.getElementById('result-description').textContent = dessert.description;
   document.getElementById('result-tip').textContent = dessert.tip;

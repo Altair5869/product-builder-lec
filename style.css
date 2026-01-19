@@ -265,6 +265,14 @@ body {
   animation: celebrate 1s ease-in-out;
 }
 
+.result-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
 @keyframes celebrate {
   0% {
     transform: scale(0) rotate(-180deg);
@@ -376,5 +384,10 @@ footer {
 
   .result-icon {
     font-size: 80px;
+  }
+
+  .result-image {
+    width: 160px;
+    height: 160px;
   }
 }
