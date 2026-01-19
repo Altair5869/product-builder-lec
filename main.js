@@ -63,12 +63,12 @@ const desserts = {
     tags: ["#프렌치", "#다채로운맛", "#선물용"],
     tip: "냉장 보관 후 상온에 10분 두고 먹으면 최상의 식감을 즐길 수 있어요!"
   },
-  yakgwa: {
-    name: "약과",
-    icon: "🍯",
-    description: "꿀과 참기름으로 만든 한국 전통 디저트가 MZ세대에게 재발견되고 있어요! 달콤하고 쫀득한 식감이 중독성 있는 요즘 대세 디저트예요.",
-    tags: ["#한국전통", "#꿀맛", "#MZ핫템"],
-    tip: "차가운 우유나 아메리카노와 함께하면 단맛이 중화되어 더 맛있어요!"
+  yoajung: {
+    name: "요아정",
+    icon: "🍦",
+    description: "요거트 아이스크림에 다양한 토핑을 마음껏 올려 먹는 커스텀 디저트예요! 과일, 그래놀라, 떡, 젤리 등 원하는 토핑을 선택하는 재미가 있어요.",
+    tags: ["#요거트", "#토핑맛집", "#커스텀"],
+    tip: "그래놀라와 망고를 함께 올리면 바삭함과 상큼함을 동시에 즐길 수 있어요!"
   },
   croffle: {
     name: "크로플",
@@ -91,12 +91,12 @@ const desserts = {
     tags: ["#한국디저트", "#시원함", "#팥앙금"],
     tip: "인절미 토핑을 추가하면 고소함이 배가 돼요!"
   },
-  dubaiChocolate: {
-    name: "두바이 초콜릿",
-    icon: "🍫",
-    description: "피스타치오 카다이프가 듬뿍 들어간 두바이 초콜릿이에요! 바삭한 카다이프와 고소한 피스타치오, 달콤한 초콜릿의 조화가 환상적이에요.",
-    tags: ["#두바이", "#피스타치오", "#SNS대세"],
-    tip: "냉장 보관 후 먹으면 카다이프의 바삭함이 더 살아나요!"
+  dubaiCookie: {
+    name: "두바이 쫀득 쿠키",
+    icon: "🍪",
+    description: "겉은 바삭하고 속은 쫀득한 두바이 스타일 쿠키예요! 피스타치오 크림과 카다이프가 들어가 고소하고 달콤한 맛이 일품이에요.",
+    tags: ["#두바이", "#쫀득쿠키", "#SNS대세"],
+    tip: "전자레인지에 10초 돌리면 속이 더 쫀득해져서 맛있어요!"
   },
   saltBread: {
     name: "소금빵",
@@ -217,8 +217,8 @@ function calculateResult() {
   if (taste === 'sweet' && texture === 'crunchy') {
     return desserts.macaron;
   }
-  if (taste === 'sweet' && texture === 'chewy') {
-    return desserts.yakgwa;
+  if (taste === 'fresh' && texture === 'creamy') {
+    return desserts.yoajung;
   }
   if (temp === 'warm' && texture === 'crunchy') {
     return desserts.croffle;
@@ -229,8 +229,8 @@ function calculateResult() {
   if (temp === 'cold' && mood === 'tired') {
     return desserts.bingsu;
   }
-  if (taste === 'nutty' && texture === 'crunchy') {
-    return desserts.dubaiChocolate;
+  if (taste === 'nutty' && texture === 'chewy') {
+    return desserts.dubaiCookie;
   }
   if (taste === 'fresh' && texture === 'crunchy') {
     return desserts.tanghulu;
@@ -244,8 +244,8 @@ function calculateResult() {
 
   // 기본 추천 (가장 인기 있는 조합)
   if (mood === 'happy') return desserts.macaron;
-  if (mood === 'tired') return desserts.yakgwa;
-  if (mood === 'stressed') return desserts.dubaiChocolate;
+  if (mood === 'tired') return desserts.yoajung;
+  if (mood === 'stressed') return desserts.dubaiCookie;
   if (mood === 'excited') return desserts.tanghulu;
 
   // 최종 기본값
