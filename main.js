@@ -68,7 +68,7 @@ const desserts = {
   yoajung: {
     name: "요아정",
     icon: "🍦",
-    image: "./요아정.png",
+    image: "./yoajung.png",
     description: "요거트 아이스크림에 다양한 토핑을 마음껏 올려 먹는 커스텀 디저트예요! 과일, 그래놀라, 떡, 젤리 등 원하는 토핑을 선택하는 재미가 있어요.",
     tags: ["#요거트", "#토핑맛집", "#커스텀"],
     tip: "그래놀라와 망고를 함께 올리면 바삭함과 상큼함을 동시에 즐길 수 있어요!"
@@ -76,7 +76,7 @@ const desserts = {
   croffle: {
     name: "크로플",
     icon: "🧇",
-    image: "./크로플.png",
+    image: "./croffle.png",
     description: "크로와상의 바삭함과 와플의 식감이 만난 인기 디저트! 겉은 바삭하고 속은 촉촉한 매력에 빠져보세요.",
     tags: ["#바삭함", "#따뜻함", "#브런치"],
     tip: "바닐라 아이스크림을 올려 먹으면 따뜻함과 차가움의 조화가 환상이에요!"
@@ -84,7 +84,7 @@ const desserts = {
   cheesecake: {
     name: "바스크 치즈케이크",
     icon: "🧀",
-    image: "./바스크치즈케이크.png",
+    image: "./cheesecake.png",
     description: "겉은 캐러멜화되어 살짝 탄 듯하고, 속은 부드럽고 진한 치즈 맛이 일품이에요. 스페인 바스크 지방에서 유래한 디저트예요.",
     tags: ["#치즈러버", "#진한맛", "#부드러움"],
     tip: "차갑게 먹으면 더 진한 치즈 맛을, 상온에서는 부드러운 식감을 즐길 수 있어요!"
@@ -92,7 +92,7 @@ const desserts = {
   bingsu: {
     name: "팥빙수",
     icon: "🍧",
-    image: "./팥빙수.png",
+    image: "./bingsu.png",
     description: "곱게 간 얼음 위에 달콤한 팥과 떡, 견과류를 올린 한국 대표 디저트예요. 시원하고 달콤해서 더운 날 최고의 선택이에요.",
     tags: ["#한국디저트", "#시원함", "#팥앙금"],
     tip: "인절미 토핑을 추가하면 고소함이 배가 돼요!"
@@ -100,7 +100,7 @@ const desserts = {
   dubaiCookie: {
     name: "두바이 쫀득 쿠키",
     icon: "🍪",
-    image: "./두쫀쿠.png",
+    image: "./dubai-cookie.png",
     description: "속은 쫀득하면서 카삭카삭한 식감이 있는 두바이 쫀득 쿠키예요! 피스타치오 크림과 카다이프가 들어가 고소하고 달콤한 맛이 일품이에요.",
     tags: ["#두바이", "#쫀득쿠키", "#SNS대세"],
     tip: "전자레인지에 10초 돌리면 속이 더 쫀득해져서 맛있어요!"
@@ -108,7 +108,7 @@ const desserts = {
   saltBread: {
     name: "소금빵",
     icon: "🥐",
-    image: "./소금빵.png",
+    image: "./salt-bread.png",
     description: "겉은 바삭하고 속은 촉촉한 빵 위에 소금이 톡톡! 버터의 풍미와 짭짤한 소금의 조화가 자꾸만 손이 가는 인기 빵이에요.",
     tags: ["#짭짤함", "#버터향", "#베이커리핫템"],
     tip: "오븐에 살짝 데워 먹으면 버터가 녹아 더 촉촉해져요!"
@@ -116,7 +116,7 @@ const desserts = {
   tanghulu: {
     name: "탕후루",
     icon: "🍡",
-    image: "./탕후루.png",
+    image: "./tanghulu.png",
     description: "신선한 과일을 달콤한 설탕 코팅으로 감싼 바삭한 디저트예요! 딸기, 포도, 귤 등 다양한 과일로 즐길 수 있어요. 한입 베어물면 바삭! 상큼!",
     tags: ["#바삭함", "#과일", "#길거리간식"],
     tip: "만든 직후 바로 먹어야 바삭한 코팅을 제대로 즐길 수 있어요!"
@@ -124,7 +124,7 @@ const desserts = {
   donut: {
     name: "글레이즈드 도넛",
     icon: "🍩",
-    image: "./글레이즈드도넛.png",
+    image: "./donut.png",
     description: "푹신한 도넛에 달콤한 글레이즈가 코팅된 클래식한 디저트예요. 심플하지만 누구나 좋아하는 맛이에요.",
     tags: ["#클래식", "#달콤함", "#간식"],
     tip: "커피와 함께하면 글레이즈의 단맛이 더 살아나요!"
