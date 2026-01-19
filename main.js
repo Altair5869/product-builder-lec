@@ -227,43 +227,103 @@ function showResult() {
 function calculateResult() {
   const [mood, taste, situation, temp, texture] = answers;
 
-  // 조합에 따른 디저트 추천
-  if (taste === 'bitter' && texture === 'soft') {
+  // 1순위: 맛 + 식감 + 온도 조합 (가장 정확한 매칭)
+
+  // 티라미수: 쌉싸름 + 부드러움/크리미
+  if (taste === 'bitter' && (texture === 'soft' || texture === 'creamy')) {
     return desserts.tiramisu;
   }
-  if (taste === 'sweet' && texture === 'crunchy') {
-    return desserts.macaron;
-  }
+
+  // 요아정: 상큼 + 크리미 + 차가움
   if (taste === 'fresh' && texture === 'creamy') {
     return desserts.yoajung;
   }
-  if (temp === 'warm' && texture === 'crunchy') {
-    return desserts.croffle;
+  if (taste === 'fresh' && temp === 'cold' && texture !== 'crunchy') {
+    return desserts.yoajung;
   }
-  if (taste === 'nutty' && texture === 'soft') {
-    return desserts.cheesecake;
-  }
-  if (temp === 'cold' && mood === 'tired') {
-    return desserts.bingsu;
-  }
-  if (taste === 'nutty' && texture === 'chewy') {
-    return desserts.dubaiCookie;
-  }
+
+  // 탕후루: 상큼 + 바삭
   if (taste === 'fresh' && texture === 'crunchy') {
     return desserts.tanghulu;
   }
-  if (temp === 'warm' && texture === 'soft') {
+
+  // 크로플: 따뜻 + 바삭 + 달콤
+  if (temp === 'warm' && texture === 'crunchy') {
+    return desserts.croffle;
+  }
+  if (taste === 'sweet' && temp === 'warm' && texture !== 'soft') {
+    return desserts.croffle;
+  }
+
+  // 소금빵: 고소 + 따뜻 + 바삭/촉촉
+  if (taste === 'nutty' && temp === 'warm') {
     return desserts.saltBread;
   }
-  if (mood === 'happy' && taste === 'sweet') {
+  if (taste === 'nutty' && texture === 'crunchy' && temp !== 'cold') {
+    return desserts.saltBread;
+  }
+
+  // 바스크 치즈케이크: 고소 + 크리미
+  if (taste === 'nutty' && texture === 'creamy') {
+    return desserts.cheesecake;
+  }
+  if (taste === 'nutty' && texture === 'soft' && temp !== 'warm') {
+    return desserts.cheesecake;
+  }
+
+  // 두바이 쫀득 쿠키: 고소 + 쫀득
+  if (taste === 'nutty' && texture === 'chewy') {
+    return desserts.dubaiCookie;
+  }
+  if (texture === 'chewy' && temp === 'room') {
+    return desserts.dubaiCookie;
+  }
+
+  // 팥빙수: 달콤 + 차가움 + 부드러움
+  if (taste === 'sweet' && temp === 'cold') {
+    return desserts.bingsu;
+  }
+  if (temp === 'cold' && texture === 'soft') {
+    return desserts.bingsu;
+  }
+
+  // 마카롱: 달콤 + 바삭 + 상온/데이트
+  if (taste === 'sweet' && texture === 'crunchy' && temp !== 'warm') {
+    return desserts.macaron;
+  }
+  if (taste === 'sweet' && situation === 'date') {
+    return desserts.macaron;
+  }
+  if (temp === 'room' && texture === 'crunchy') {
+    return desserts.macaron;
+  }
+
+  // 글레이즈드 도넛: 달콤 + 부드러움 + 상온
+  if (taste === 'sweet' && texture === 'soft') {
+    return desserts.donut;
+  }
+  if (temp === 'room' && texture === 'soft') {
     return desserts.donut;
   }
 
-  // 기본 추천 (가장 인기 있는 조합)
-  if (mood === 'happy') return desserts.macaron;
+  // 2순위: 기분 + 상황 기반 추천
+  if (mood === 'happy' && situation === 'friends') return desserts.tanghulu;
+  if (mood === 'happy' && situation === 'date') return desserts.macaron;
+  if (mood === 'happy') return desserts.donut;
+
+  if (mood === 'tired' && temp === 'cold') return desserts.bingsu;
+  if (mood === 'tired' && temp === 'warm') return desserts.saltBread;
   if (mood === 'tired') return desserts.yoajung;
-  if (mood === 'stressed') return desserts.dubaiCookie;
-  if (mood === 'excited') return desserts.tanghulu;
+
+  if (mood === 'stressed') return desserts.cheesecake;
+
+  if (mood === 'excited' && situation === 'date') return desserts.macaron;
+  if (mood === 'excited') return desserts.croffle;
+
+  // 3순위: 온도 기반 기본 추천
+  if (temp === 'cold') return desserts.yoajung;
+  if (temp === 'warm') return desserts.croffle;
+  if (temp === 'room') return desserts.macaron;
 
   // 최종 기본값
   return desserts.tiramisu;
