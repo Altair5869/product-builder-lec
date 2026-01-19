@@ -68,7 +68,7 @@ const desserts = {
   yoajung: {
     name: "요아정",
     icon: "🍦",
-    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=300&fit=crop",
+    image: "./요아정.png",
     description: "요거트 아이스크림에 다양한 토핑을 마음껏 올려 먹는 커스텀 디저트예요! 과일, 그래놀라, 떡, 젤리 등 원하는 토핑을 선택하는 재미가 있어요.",
     tags: ["#요거트", "#토핑맛집", "#커스텀"],
     tip: "그래놀라와 망고를 함께 올리면 바삭함과 상큼함을 동시에 즐길 수 있어요!"
