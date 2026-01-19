@@ -1,14 +1,73 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>달콤한 디저트 추천</title>
   <link href='/style.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
+  <div class="container">
+    <!-- 시작 화면 -->
+    <section id="start-screen" class="screen active">
+      <div class="hero">
+        <div class="hero-icon">🍰</div>
+        <h1>오늘의 디저트 추천</h1>
+        <p class="subtitle">당신의 기분에 딱 맞는 달콤한 디저트를 찾아드릴게요!</p>
+        <button class="btn-primary" onclick="startQuiz()">
+          시작하기
+          <span class="btn-icon">→</span>
+        </button>
+      </div>
+      <div class="dessert-preview">
+        <span>🧁</span>
+        <span>🍩</span>
+        <span>🍪</span>
+        <span>🍮</span>
+        <span>🍨</span>
+      </div>
+    </section>
+
+    <!-- 퀴즈 화면 -->
+    <section id="quiz-screen" class="screen">
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="quiz-container">
+        <p class="question-number">질문 <span id="current-q">1</span> / <span id="total-q">5</span></p>
+        <h2 id="question" class="question"></h2>
+        <div id="options" class="options"></div>
+      </div>
+    </section>
+
+    <!-- 결과 화면 -->
+    <section id="result-screen" class="screen">
+      <div class="result-container">
+        <div class="result-icon" id="result-icon">🎂</div>
+        <h2 class="result-title">당신을 위한 디저트는...</h2>
+        <h1 id="result-name" class="result-name"></h1>
+        <p id="result-description" class="result-description"></p>
+        <div class="result-tags" id="result-tags"></div>
+        <div class="result-tip" id="result-tip"></div>
+        <div class="button-group">
+          <button class="btn-secondary" onclick="restartQuiz()">
+            다시 하기
+          </button>
+          <button class="btn-primary" onclick="shareResult()">
+            공유하기
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Made with 💖 for dessert lovers</p>
+  </footer>
+
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
