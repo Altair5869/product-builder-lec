@@ -1,0 +1,11 @@
+# 디저트 추천 사이트 robots.txt
+# https://altair5869.github.io/product-builder-lec/
+
+User-agent: *
+Allow: /
+
+# 사이트맵
+Sitemap: https://altair5869.github.io/product-builder-lec/sitemap.xml
+
+# Crawl-delay (선택사항)
+Crawl-delay: 1
